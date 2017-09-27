@@ -484,6 +484,9 @@ h6 {
   margin-top: 5px;
   padding: 20px 10px;
 }
+.home h3.subscribe-title{
+  color: #fff
+}
 .home .hero-txt h1{
   font-size: 100px;
 }
@@ -1475,7 +1478,7 @@ ul.styled-list.list-star li:before {
 }
 .subscribe .subscribe-title {
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   margin-bottom: 50px;
   font-size: 32px;
   text-transform: uppercase;
