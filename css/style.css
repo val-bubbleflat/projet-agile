@@ -351,6 +351,14 @@ h6 {
 #temoignages .section-title h3, #temoignages .section-title{
   color: white!important;
 }
+#temoignages .section-title:before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 51px;
+  background-image: url(../images/title-top-white.png);
+  background-repeat: no-repeat;
+}
 .bottom-line {
   margin-bottom: 20px;
 }
