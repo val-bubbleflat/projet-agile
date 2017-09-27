@@ -348,6 +348,9 @@ h6 {
   background-image: url(../images/title-top.png);
   background-repeat: no-repeat;
 }
+#temoignages .section-title h3, #temoignages .section-title{
+  color: white!important;
+}
 .bottom-line {
   margin-bottom: 20px;
 }
