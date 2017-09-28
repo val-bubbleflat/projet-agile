@@ -1225,7 +1225,7 @@ ul.styled-list.list-star li:before {
   padding: 100px 0;
 }
 
-.errorInput{
+.errorInput:focus{
   border-color: red !important;
 }
 .pricing-table {

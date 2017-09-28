@@ -86,6 +86,7 @@
 											</span>
 										</div>
 									</form>
+									<h3 style="display:none" class="subscribe-title" id="emailSent"><i class="fa fa-check"></i> C'est envoyé ! Merci pour votre participation :)</h3>
 								</div>
 							</div>
 
@@ -313,8 +314,9 @@
         mixpanel.track("showHomepage");
         mixpanel.identify("12148");
         $('#mc-email').keypress(function(){
+
             var email = $('#mc-email').val();
-            if (validateEmail(email) ) {
+            if (validateEmail(email) && email.length > 3) {
                 $('#mc-email').removeClass("errorInput");
             }else{
                 $('#mc-email').addClass("errorInput");
@@ -323,12 +325,13 @@
 		})
         function sendEmail() {
             var email = $('#mc-email').val();
-            if (validateEmail(email) ) {
+            if (validateEmail(email) && email.length > 3 ) {
                 mixpanel.people.set({
                     "$email": email,    // only special properties need the $
                     "$created": new Date(),
                 });
                 $('#mc-email').removeClass("errorInput");
+                $('#emailSent').slideDown();
 			}else{
                 $('#mc-email').addClass("errorInput");
                 //$('#btn-email').addClass("errorInput");
