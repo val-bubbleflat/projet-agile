@@ -1482,7 +1482,7 @@ ul.styled-list.list-star li:before {
   background-color: #4ecdc4;
   color: #fff;
 }
-.subscribe {
+/*.subscribe {
   padding: 120px 0;
   background-image: url(../images/subscribe2.png);
   background-size: cover;
@@ -1490,7 +1490,7 @@ ul.styled-list.list-star li:before {
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #000;
-}
+}*/
 .subscribe .subscribe-title {
   text-align: center;
   color: #fff !important;
